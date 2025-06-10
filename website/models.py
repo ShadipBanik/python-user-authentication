@@ -13,7 +13,7 @@ class User(db.Model,UserMixin) :
     email =  db.Column(db.String(150), unique = True)
     password =  db.Column(db.String(150))
     firstName =  db.Column(db.String(150))
-    lasttName =  db.Column(db.String(150))
+    lastName =  db.Column(db.String(150))
     notes = db.relationship('Note')
 
 
