@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title%} Sign Up {% endblock %}
+
+{% block content%}
+<form method="post" class="position-absolute  top-50 start-50 translate-middle d-block bg-light p-4 border rounded" style="width: 30%;">
+  <h2 class="text-center"> SIGN UP</h2>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address <span class="text-danger">*</span></label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">First Name</label>
+    <input type="text" name="firstName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Last Name</label>
+    <input type="text" name="lastName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+  </div>
+    <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+    <input type="password" name="confirmPassword" class="form-control" id="exampleInputPassword1" placeholder="Confirm password">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
